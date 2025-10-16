@@ -2,10 +2,10 @@
 # winboat_audio.sh
 # Connect to WinBoat VM and mirror Windows audio to Linux in real time (no JACK)
 
-# ====== CONFIGURATION ======
-LINUX_IP="Put your linux ip here"     # IP of your Linux host (to receive audio)
-RDP_USER="negative0"
-RDP_PASS="10100"
+# ====== CONFIGURATION ======   # IP of the Windows VM inside Docker
+LINUX_IP="Put the IP of your linux host here"     # IP of your Linux host (to receive audio)
+RDP_USER="put the name of your winboat user"
+RDP_PASS="Put your Winboat code here"
 RDP_PORT="3389"
 AUDIO_PORT="5000"             # UDP port for audio
 SAMPLE_RATE="48000"
@@ -20,7 +20,6 @@ echo "[+] Starting low-latency audio receiver..."
 ffplay -nodisp -autoexit -fflags nobuffer -flags low_delay -framedrop \
     -probesize 32 -analyzeduration 0 \
     -f mpegts -i "udp://0.0.0.0:$AUDIO_PORT?listen" &
-    
 # ====== INSTRUCTIONS FOR WINDOWS SIDE ======
 cat <<EOF
 
