@@ -1,6 +1,5 @@
 #!/bin/bash
-# winboat_audio.sh
-# Connect to WinBoat VM and mirror Windows audio to Linux in real time (no JACK)
+
 
 # ====== CONFIGURATION ======   # IP of the Windows VM inside Docker
 LINUX_IP="Put the IP of your linux host here"     # IP of your Linux host (to receive audio)
@@ -9,7 +8,7 @@ RDP_PASS="Put your Winboat code here"
 RDP_PORT="3389"
 AUDIO_PORT="5000"             # UDP port for audio
 SAMPLE_RATE="48000"
-BUFFER="32"                   # Low buffer for minimal latency (~20–30 ms)
+BUFFER="32"                   
 
 # ====== START THE RDP SESSION ======
 echo "[+] Connecting to WinBoat via RDP (audio-mode 1: disable RDP audio playback)"
