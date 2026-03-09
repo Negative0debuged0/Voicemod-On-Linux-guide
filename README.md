@@ -1,3 +1,5 @@
+WARNING: THIS IS EXPERIMENTAL AND FOR TESTING PURPOSES AND IS NOT CONFIRMED TO WORK ON OTHER ENVIROMENTS OTHER THAN MY OWN DO NOT WASTE YOUR TIME ON THIS
+
 This is how to make voicemod work on linux
 please keep in mind that this method is very bare bones 
 
