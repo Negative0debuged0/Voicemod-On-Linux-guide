@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-# ====== CONFIGURATION ======   # IP of the Windows VM inside Docker
+# ====== CONFIGURATION ======   
+WIN_IP="Put the IP of the Windows machine here" # IP of the Windows VM inside Docker
 LINUX_IP="Put the IP of your linux host here"     # IP of your Linux host (to receive audio)
 RDP_USER="put the name of your winboat user"
 RDP_PASS="Put your Winboat code here"
